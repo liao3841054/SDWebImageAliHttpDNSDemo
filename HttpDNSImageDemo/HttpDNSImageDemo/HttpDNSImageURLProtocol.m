@@ -72,11 +72,7 @@ static NSString * const URLProtocolHandledKey = @"URLProtocolHandledKey";
     if ([host isEqualToString:@"bt.img.17gwx.com"] || [host isEqualToString:@"pic1.bantangapp.com"]) {
         // 还需要测试是否需要添加这个链接。
         
-        NSInteger open_httpdns =  [[NSUserDefaults standardUserDefaults] integerForKey:@"open_httpdns"];
-        if (open_httpdns == 1) {
-            // [self addDowloadURLByAliHttpDNSConvert:self.request.URL];
-            return YES;
-        }
+        return YES;
         
     }
     

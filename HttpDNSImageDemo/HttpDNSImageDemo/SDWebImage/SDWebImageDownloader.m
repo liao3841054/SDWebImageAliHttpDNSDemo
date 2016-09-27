@@ -9,6 +9,7 @@
 #import "SDWebImageDownloader.h"
 #import "SDWebImageDownloaderOperation.h"
 #import <ImageIO/ImageIO.h>
+#import "HttpDNSImageURLProtocol.h"
 
 static NSString *const kProgressCallbackKey = @"progress";
 static NSString *const kCompletedCallbackKey = @"completed";
@@ -81,6 +82,9 @@ static NSString *const kCompletedCallbackKey = @"completed";
 
         NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
         sessionConfig.timeoutIntervalForRequest = _downloadTimeout;
+        // 注册自己DNS图片解析
+        sessionConfig.protocolClasses = @[[HttpDNSImageURLProtocol class]];
+        
 
         /**
          *  Create the session for this task

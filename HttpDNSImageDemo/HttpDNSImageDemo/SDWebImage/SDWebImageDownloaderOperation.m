@@ -121,7 +121,7 @@ NSString *const SDWebImageDownloadFinishNotification = @"SDWebImageDownloadFinis
             sessionConfig.timeoutIntervalForRequest = 15;
             
             // d对图片下载配置
-            sessionConfig.protocolClasses = @[[HttpDNSImageURLProtocol class]];
+            //sessionConfig.protocolClasses = @[[HttpDNSImageURLProtocol class]];
             
             /**
              *  Create the session for this task
