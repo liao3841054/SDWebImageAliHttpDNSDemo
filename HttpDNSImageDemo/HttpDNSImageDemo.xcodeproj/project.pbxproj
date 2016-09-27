@@ -30,6 +30,7 @@
 		9255753B1D9A820E0069471D /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9255752A1D9A820E0069471D /* UIImageView+WebCache.m */; };
 		9255753C1D9A820E0069471D /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9255752C1D9A820E0069471D /* UIView+WebCacheOperation.m */; };
 		9255753F1D9A823C0069471D /* HttpDNSImageURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9255753E1D9A823C0069471D /* HttpDNSImageURLProtocol.m */; };
+		925575421D9A83730069471D /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 925575411D9A83730069471D /* NetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,8 @@
 		9255752C1D9A820E0069471D /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		9255753D1D9A823C0069471D /* HttpDNSImageURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpDNSImageURLProtocol.h; sourceTree = "<group>"; };
 		9255753E1D9A823C0069471D /* HttpDNSImageURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpDNSImageURLProtocol.m; sourceTree = "<group>"; };
+		925575401D9A83730069471D /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		925575411D9A83730069471D /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				925574F41D9A80590069471D /* Supporting Files */,
 				9255753D1D9A823C0069471D /* HttpDNSImageURLProtocol.h */,
 				9255753E1D9A823C0069471D /* HttpDNSImageURLProtocol.m */,
+				925575401D9A83730069471D /* NetworkManager.h */,
+				925575411D9A83730069471D /* NetworkManager.m */,
 			);
 			path = HttpDNSImageDemo;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9255753A1D9A820E0069471D /* UIImageView+HighlightedWebCache.m in Sources */,
+				925575421D9A83730069471D /* NetworkManager.m in Sources */,
 				9255752E1D9A820E0069471D /* NSData+ImageContentType.m in Sources */,
 				925575341D9A820E0069471D /* SDWebImageManager.m in Sources */,
 				925575321D9A820E0069471D /* SDWebImageDownloader.m in Sources */,
