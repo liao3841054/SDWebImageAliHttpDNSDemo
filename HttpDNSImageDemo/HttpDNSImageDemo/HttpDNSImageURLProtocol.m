@@ -8,7 +8,7 @@
 
 #import "HttpDNSImageURLProtocol.h"
 //#import <AlicloudHttpDNS/AlicloudHttpDNS.h>
-//#import "NetworkManager.h"
+#import "NetworkManager.h"
 
 static NSString * const URLProtocolHandledKey = @"URLProtocolHandledKey";
 
@@ -59,23 +59,18 @@ static NSString * const URLProtocolHandledKey = @"URLProtocolHandledKey";
     if ([NSURLProtocol propertyForKey:URLProtocolHandledKey inRequest:request]) {
         return NO;
     }
-    /*
+    
     // 监测当前是否有代理模式
     if ([NetworkManager configureProxies]) {
         return NO;
     }
-    */
+
     
     //拦截半糖链接，使用AliDNSHTTP 解析
     //bt.img.17gwx.com", @"pic1.bantangapp.com
     NSString *host = request.URL.host;
     if ([host isEqualToString:@"bt.img.17gwx.com"] || [host isEqualToString:@"pic1.bantangapp.com"]) {
         // 还需要测试是否需要添加这个链接。
-        /*
-         if ([[SDWebImageManager sharedManager] cachedImageExistsForURL:url]) {
-         NSLog(@"已经存在-- %@",[url absoluteString]);
-         return NO;
-         }*/
         
         NSInteger open_httpdns =  [[NSUserDefaults standardUserDefaults] integerForKey:@"open_httpdns"];
         if (open_httpdns == 1) {
