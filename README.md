@@ -1,0 +1,2 @@
+# SDWebImageAliHttpDNSDemo
+使用AliHttpDNS 解决不同网络情况下图片加载不出来的问题.
